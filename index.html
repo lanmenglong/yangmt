@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>我的洋码头</title>
+	<link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/top.css">
+	<link rel="stylesheet" href="./css/footer.css">
+
+	<script src="./js/jquery-3.4.1.js"></script>
+	<script src="./js/caini.js"></script>
+	<script src="./js/fenlei.js"></script>
+
+</head>
+
+<body>
+	<div class="box">
+		<div class="top">
+			<div class="topList">
+				<nav class="container">
+					<div class="fl">
+						<span><a href="javascirpt:;"> Hi,欢迎来到洋码头</a></span>
+						<span><a href="javascirpt">我是买手</a></span>
+					</div>
+					<ul class="fr"> 注册
+						<li>
+							<a href="./html/login.html">登陆</a>
+						</li>
+						<li>
+							<a href="./html/register.html">注册</a>
+						</li>
+						<li>
+							<a href="javascript:;">购物车</a>
+						</li>
+						<li>
+							<a href="javascript:;">我的订单</a>
+						</li>
+						<li>
+							<a href="javascript:;">个人中心</a>
+						</li>
+						<li>
+							<a href="javascript:;">规则&公告</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- 头部导航结束 -->
+			<!-- 购物车边条开始 -->
+			<div class="rightbar">
+				<ul class="rightbar-inner">
+					<li class="itemGou">
+						<a href="" class="glyphicon glyphicon-user" title="我"></a>
+					</li>
+					<li class="itemGou">
+						<a href="" class="glyphicon glyphicon-shopping-cart"
+							title="购物车"></br><span>购</br>物</br>车</span></a>
+
+					</li>
+					<li class="itemGou" id="erWei">
+						<a href="" class="glyphicon glyphicon-qrcode" title="二维码"></a>
+						<div id="qrcodeContainer">
+							<img src="./imgas/11.png" alt="">
+							<span>下载APP领取260元新人礼包</span>
+						</div>
+					</li>
+					<li class="itemGou" id="gouTop">
+						<a href="javaspript:;" class="glyphicon glyphicon-triangle-top" title="返回顶部">
+							<span>TOP</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 购物车边条结束 -->
+			<div class="topMiddle container">
+				<div class="topLogo">
+					<h1 class="logo">
+						<a href="javascript:;">
+							<img src="./imgas/01.png" alt="">
+							<span>购在全球 更多洋货</span>
+						</a>
+					</h1>
+				</div>
+				<!-- logo部分结束 -->
+				<form action="" class="logoInp fl">
+					<input type="text" placeholder="搜索您想要的商品"><button>
+						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+					</button>
+				</form>
+				<!-- logo搜索框 -->
+				<div class="logoImg fr">
+					<img src="./imgas/02.png" alt="">
+				</div>
+				<!-- logo图片 -->
+
+			</div>
+			<!-- 头部logo结束 -->
+			<div class="menu-nav container">
+
+				<a href="" style="color: #c33;" class="menu-item">首页</a>
+				<a href="" class="menu-item">今日限时抢</a>
+				<a href="" class="menu-item">洋货集</a>
+				<a href="" id="classify" class="classifyOK menu-item">分类
+					<i class="glyphicon glyphicon-menu-down jianTou"></i>
+				</a>
+				<div class="category-box">
+					<div class="category-downlist container">
+						<div class="category-wrap">
+
+						</div>
+						<script>
+							$.getJSON('./json/fenlei.json', (data) => (new Feilei(data)).init())
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 公告头部结束 -->
+		<div class="contentBox">
+			<!-- 大轮播图 -->
+			<div class="contentImg container">
+				大轮播图
+			</div>
+			<!-- 轮播图下方介绍 -->
+			<div class="innerBox">
+				<div class="inner container">
+
+					<span class="item"><i class="glyphicon glyphicon-info-sign"></i><span>海外正品</span></span>
+					<span class="item"><i class="glyphicon glyphicon-ban-circle"></i><span>严格监管</span></span>
+					<span class="item"><i class="glyphicon glyphicon-user"></i><span>买手认证</span></span>
+					<span class="item"><i class="glyphicon glyphicon-record"></i><span>售后无忧</span></span>
+				</div>
+			</div>
+		</div>
+		<!-- 大轮播图结束 -->
+		<!-- 今日限时抢 -->
+		<div class="jinRi container">
+			<div class="jinLogo">
+				<i class="glyphicon glyphicon-time"></i>
+				<span>今日限时抢</span>
+				<a href="" class="fr">更多 <i class="glyphicon glyphicon-menu-right"></i></a>
+			</div>
+		</div>
+		<!-- 今日限时抢轮播图 -->
+		<div class="mod-bd container" id="mod-bd">
+
+		</div>
+		<div class="timeout-wrap">
+			<span class="title">
+				<i class="glyphicon glyphicon-time"></i>
+				距离结束
+			</span>
+			<span class="time hours"></span>
+			<span class="txt">:</span>
+			<span class="time minutes"></span>
+			<span class="txt">:</span>
+			<span class="time second"></span>
+		</div>
+		<!-- js部分在caini.js -->
+		<script>
+			$.getJSON('./json/jinriIMG.json', (data) => (new JinriIMG(data)).init())
+		</script>
+
+		<!-- 今日限时抢结束 -->
+		<div class="commodity container">
+			<div class="fenLei">
+				<i class="glyphicon glyphicon-time"></i>
+				<span>分类</span>
+				<a href="" class="fr">更多 <i class="glyphicon glyphicon-menu-right"></i></a>
+			</div>
+			<div class="fenShow">
+				<a href="">
+					<img src="./imgas/03.png" alt="">
+				</a>
+			</div>
+			<!-- 分类结束 -->
+			<!-- 很多轮播图 -->
+			<div class="brand-list">
+				<div class="bl-item">
+					<span class="bl-prev">
+						<i class="glyphicon glyphicon-triangle-left"></i>
+					</span>
+					<span class="bl-next">
+						<i class="glyphicon glyphicon-triangle-right"></i>
+					</span>
+					<div class="bl-item-bd">
+						<div>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+						</div>
+						<div>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">fdsahkfj</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">hghf</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+						</div>
+					</div>
+					<div class="bl-item-ft">包包</div>
+				</div>
+				<div class="bl-item">
+					<span class="bl-prev">
+						<i class="glyphicon glyphicon-triangle-left"></i>
+					</span>
+					<span class="bl-next">
+						<i class="glyphicon glyphicon-triangle-right"></i>
+					</span>
+					<div class="bl-item-bd">
+						<div>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+						</div>
+					</div>
+					<div class="bl-item-ft">包包</div>
+				</div>
+				<div class="bl-item">
+					<span class="bl-prev">
+						<i class="glyphicon glyphicon-triangle-left"></i>
+					</span>
+					<span class="bl-next">
+						<i class="glyphicon glyphicon-triangle-right"></i>
+					</span>
+					<div class="bl-item-bd">
+						<div>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+						</div>
+					</div>
+					<div class="bl-item-ft">包包</div>
+				</div>
+				<div class="bl-item">
+					<span class="bl-prev">
+						<i class="glyphicon glyphicon-triangle-left"></i>
+					</span>
+					<span class="bl-next">
+						<i class="glyphicon glyphicon-triangle-right"></i>
+					</span>
+					<div class="bl-item-bd">
+						<div>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+							<a href="">
+								<p class="bl-img">
+									<img src="./imgas/04.png" alt="">
+								</p>
+								<p class="bl-name">路易.威登</p>
+							</a>
+						</div>
+					</div>
+					<div class="bl-item-ft">包包</div>
+				</div>
+			</div>
+		</div>
+		<!-- 中间轮播图结束 -->
+		<!-- 热卖地 -->
+		<div class="mod container">
+			<div class="mod-hd">
+				<i class="glyphicon glyphicon-map-marker"></i>
+				<span class="hd-title">热卖地</span>
+			</div>
+			<div class="hot-site-list">
+				<a href="" title="北美:热卖品牌" class="hot-img">
+					<img src="./imgas/05.png" alt="">
+				</a>
+				<a href="" title="欧洲:热卖品牌" class="hot-img">
+					<img src="./imgas/06.png" alt="">
+				</a>
+				<a href="" title="亚洲:热卖品牌" class="hot-img">
+					<img src="./imgas/07.png" alt="">
+				</a>
+				<a href="" title="澳新:热卖品牌" class="hot-img">
+					<img src="./imgas/08.png" alt="">
+				</a>
+			</div>
+		</div> 注册
+		<div class="mod">
+			<div class="mod-hd container" id="gao">
+				<i class="glyphicon glyphicon-heart-empty"></i>
+				<span class="hd-title">猜你喜欢</span>
+				<div id="caiNi">
+				</div>
+			</div>
+		</div>
+		<script>
+			$.getJSON("./json/caini.json", (data) => (new Caini(data)).init())
+		</script>
+		<!-- 猜你喜欢结束 -->
+		<!-- 点击加载更多 -->
+		<div class="container dianJi">点击加载更多</div>
+		<!-- 海外正品 严格监管 尾部每页都有-->
+		<div class="footer">
+			<div class="matou-server">
+				<div class="container haiWai">
+					<span class="hai-item">
+						<i class="glyphicon glyphicon-plane"></i>
+						<span>海外正品</span>
+					</span>
+					<span class="hai-item">
+						<i class="glyphicon glyphicon-sunglasses"></i>
+						<span>严格监管</span>
+					</span>
+					<span class="hai-item">
+						<i class="glyphicon glyphicon-user"></i>
+						<span>买手认证</span>
+					</span>
+					<span class="hai-item">
+						<i class="glyphicon glyphicon-tree-deciduous"></i>
+						<span>售后无忧</span>
+					</span>
+					<span class="chaKan">查看详情</span>
+				</div>
+			</div>
+		</div>
+		<div class="area container">
+			<div class="bottom_list">
+				<ul class="dl">
+					<li class="dt">购物指南</li>
+					<li>
+						<a href="javascript:;">注册与登陆</a>
+					</li>
+					<li>
+						<a href="javascript:;">账户信息维护</a>
+					</li>
+					<li>
+						<a href="javascript:;">购物流程</a>
+					</li>
+					<li>
+						<a href="javascript:;">会员体系</a>
+					</li>
+					<li>
+						<a href="javascript:;">常见问题</a>
+					</li>
+				</ul>
+				<ul class="dl">
+					<li>订单服务</li>
+					<li>
+						<a href="javascript:;">订单状态说明</a>
+					</li>
+					<li>
+						<a href="javascript:;">自动取消订单</a>
+					</li>
+					<li>
+						<a href="javascript:;">上传身份证</a>
+					</li>
+				</ul>
+				<ul class="dl">
+					<li>支付与配送</li>
+					<li>
+						<a href="javascipt:;">支付方式</a>
+					</li>
+					<li>
+						<a href="javascipt:;">优惠券和红包</a>
+					</li>
+					<li>
+						<a href="javascipt:;">如何提现</a>
+					</li>
+					<li>
+						<a href="javascipt:;">配送方式</a>
+					</li>
+				</ul>
+				<ul class="dl">
+					<li class="dt">售后服务</li>
+					<li>
+						<a href="javascript:;">消费维权</a>
+					</li>
+					<li>
+						<a href="javascript:;">纠纷处理规则</a>
+					</li>
+					<li>
+						<a href="javascript:;">退货规则</a>
+					</li>
+				</ul>
+				<ul class="dl"><img src="./imgas/12.png" alt=""></ul>
+			</div>
+			<div><img src="./imgas/13.png" alt=""></div>
+		</div>
+	</div>
+
+
+</body>
+
+<script src="./js/index.js"></script>
+<script src="./js/top.js"></script>
+<script>
+
+</script>
+
+</html>

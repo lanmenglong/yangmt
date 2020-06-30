@@ -1,0 +1,374 @@
+.contentBox{
+    
+    width: 100%;
+    background-color: red;
+    .contentImg{
+        font-size: 50px;
+        position: relative;
+        background-color: yellow;
+    }
+    .innerBox{
+        background-color: #ccc;
+        
+        .inner{
+            margin-top: 5px;
+            .item{
+                display: block;
+                height: 30px;
+                width: 245px;
+                background-color: #ccc;
+                line-height: 30px;
+                text-align: center;
+                font-size: 14px;
+                border-right: 1px solid #000;
+                float: left;
+                
+                i{
+                    color: red;
+                    font-size: 18px;
+                }
+            }
+            .item:last-child{
+                border-right: 0;
+            }
+        }
+    }
+}
+/* 大轮播图*/
+/*今日限时抢*/
+.jinRi{
+    position: relative;
+    margin-top: 40px;
+    i{color: #c33;font-size: 20px;}
+    span{font-size: 20px;font-weight: bold;}
+    a{
+        text-decoration: none;
+        i{
+            color: #000;
+        }
+
+    }
+    a:hover{
+        color: red;
+    }
+}
+.mod-bd{
+    margin-top: 10px;
+    height: 300px;
+    .today-buying-wrap{
+        margin-top: -30px;
+        position: relative;
+        height: 100%;
+        .swith-btn-prev{
+            position: absolute;
+            top: 50%;
+            margin-top: -12px;
+            z-index: 9;
+            left: 0;
+            cursor: pointer;
+            i{
+                background-position: -320px -138px;
+                display: inline-block;
+                vertical-align: middle;
+                width: 45px;
+                height: 80px;
+                font-size: 30px;
+                line-height: 80px;
+                text-align: center;
+                background-color: #000;
+                opacity:0.5;
+                color: #fff;
+            }
+        }
+        .swith-btn-next{
+            position: absolute;
+            top: 50%;
+            margin-top: -12px;
+            z-index: 9;
+            cursor: pointer;
+            right: 0;
+            i{
+                width: 45px;
+                height: 80px;
+                font-size: 30px;
+                background-position: -366px -138px;
+                display: inline-block;
+                vertical-align: middle;
+                background-color: #000;
+                opacity:0.5;
+                line-height: 80px;
+                text-align: center;
+                color: #fff;
+            }
+        }
+        .swith-today-banner{
+            position: relative;
+            height: 290px;
+            // 所有图片添加的class
+            .swith-img{
+                position: absolute;
+                top: 69px;
+                display: block;
+                img{
+                    width: 431.6px;
+                    height: 200px;
+                }
+            }
+            // 左边图片添加的class
+            .swith-img-prev{
+                z-index: 1;
+                left: 0;
+                
+            }
+            // 右边图片添加的class
+            .swith-img-next{
+                z-index: 1;
+                right: 0;
+                
+            }
+            // 中间图片添加的class
+            .swith-img-active{
+                z-index: 3;
+
+                left: 50%;
+                margin-left: -280px;
+                top: 40px;
+                width: 560px;
+                height: 260px;
+                box-shadow: 0 4px 12px 0 #cecece;
+                img{
+                    width: 560px;
+                    height: 260px;
+                }
+            }
+        }
+        .gray{
+            left: 0;
+            z-index: 2;
+            background: #000;
+            opacity: 0.2;
+            height: 200px;
+            top: 89px;
+            position: absolute;
+            width: 100%;
+                }
+    }
+    
+}
+/*今日限时抢轮播图*/
+/*今日限时抢时间*/
+.timeout-wrap{
+    width: 388px;
+    height: 59px;
+    padding-top: 14px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    background-color: red;
+    border-radius: 20px 20px 20px 20px ;
+    .title{
+        font-size: 26px;
+        color: #fff;
+        letter-spacing: 2px;
+        padding: 0 20px 0 0;
+    }
+    .time{
+        height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    background-color: rgba(196,52,52,.8);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 28px;
+    display: inline-block;
+    }
+    .txt{
+        font-size: 28px;
+        color: #fff;
+    }
+
+}
+/*今日限时抢结束*/
+.commodity{
+    margin-top: 30px;
+    .fenLei{
+        i{color: #c33;font-size: 20px;}
+    span{font-size: 20px;font-weight: bold;}
+    a{
+        text-decoration: none;
+        i{
+            color: #000;
+        }
+        
+    }
+    a:hover{
+            color: red;
+        }
+    }
+    .brand-list{
+        overflow: hidden;
+        float: left;
+        margin-left: -10px;
+        .bl-item{
+            width: 232px;
+            float: left;
+            margin-left: 10px;
+            background-color: #f8f8f8;
+            position: relative;
+            
+        span{
+            background-color: #ccc;
+        }
+        .bl-prev{
+            position: absolute;
+            top: 110px;
+            left: 0;
+            cursor: pointer;
+            display: none;
+            z-index: 10;
+            font-size: 20px;
+        }
+        .bl-next{
+            position: absolute;
+            top: 110px;
+            right: 0;
+            cursor: pointer;
+            display: none;
+            z-index: 10;
+            font-size: 20px;
+        }
+        .bl-item-bd{
+            overflow: hidden;
+            padding: 10px 20px 20px;
+            margin-left: -10px;
+            height: 234px;
+            
+        a{
+            width: 91px;
+            float: left;
+            text-align: center;
+            margin: 10px 0 0 10px;
+            color: #383838;
+        }
+        a:hover{
+            text-decoration: none;
+            color: #c33;
+        }
+        .bl-img{
+            width: 91px;
+            height: 91px;
+            text-align: center;
+            line-height: 91px;
+            background-color: #fff;
+        }
+        .bl-name{
+            margin-top: 3px;
+            color: #383838;
+            height: 18px;
+            overflow: hidden;
+        }
+    }
+    .bl-item-ft{
+        text-align: center;
+        padding: 10px 0 5px;
+        border: 1px solid #dedede;
+        border-top: 0;
+        font-size: 16px;
+        color: #383838;
+        background-color: #fff;
+        font-weight: 700;
+    }
+    }
+    
+    }
+
+    
+}
+/* 热卖地*/
+.mod{
+    margin-top:40px;
+    text-align: left;
+    .mod-hd{
+        margin-bottom: 10px;
+        .hd-title{
+            vertical-align: middle;
+            color: #383838;
+            font-size: 20px;
+            font-weight: 700;
+            margin-left: 8px;
+        }
+        i{
+            color: #c33;
+            font-size: 20px;
+        }
+        
+    }
+    .hot-site-list{
+      
+        .hot-img{
+            
+            float: left;
+            
+            width: 280px;
+        
+        }
+    }
+}
+/* 猜你喜欢*/
+.product-list {
+    .product-item {
+    width: 212px;
+    float: left;
+    font-size: 14px;
+    padding: 9px;
+    border: 1px solid #dedede;
+    text-align: left;
+    
+    margin: 10px 0 0 10px;
+        .product-img{
+            img{
+                width: 190px;
+                height: 190px
+            }
+        }
+        .lineClamp{
+            height: 20px;
+            white-space: nowrap;
+            display: block;
+            overflow: hidden;
+            text-overflow:ellipsis;
+        }
+        a:hover{
+            text-decoration:none;
+            color:#c33;
+        }
+        .unit{
+            font-size: 18px;
+            color: red;
+        }
+        .gouBtn{
+            float: right;
+            font-size: 12px;
+        }
+    }
+
+
+}
+/*点击加载更多*/
+.dianJi{
+    border: 1px solid #dedede;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 18px;
+    // color: #383838;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.dianJi:hover{
+    border: 1px solid #c33;
+    color: #c33;
+}

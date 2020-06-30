@@ -1,0 +1,355 @@
+a,abbr,acronym,address,applet,article,aside,bb,big,blockquote,body,caption,cite,code,datagrid,datalist,dd,del,details,dfn,dialog,div,dl,dt,em,eventsource,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,input,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,select,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,ul,var {
+	margin:0;
+	padding:0
+}
+body {
+	background-color:#fff;
+	font:normal 12px/1.5 Microsoft yahei,Arial;
+	color:#666;
+	text-align:center;
+	word-wrap:break-word;
+	word-break:break-all
+}
+.clearfix,.wrapper {
+	display:block
+}
+.clearfix:after,.wrapper:after {
+	content:".";
+	height:0;
+	visibility:hidden;
+	display:block;
+	clear:both;
+	font-size:0;
+	line-height:0
+}
+.wrapper {
+	min-width:1000px;
+	width:100%
+}
+.wrapper .area {
+	padding:0 5px;
+	text-align:left
+}
+ol,ul {
+	list-style:none outside
+}
+ol li,ul li {
+	margin:0;
+	padding:0
+}
+a {
+	text-decoration:none;
+	color:#666
+}
+a:hover {
+	text-decoration:underline;
+	color:#1f7dd8
+}
+.wrapper .area {
+	margin-right:auto;
+	margin-left:auto;
+	width:1000px;
+	min-width:1000px
+}
+.simpletopbar {
+	height:98px;
+	border-bottom:2px solid #c33
+}
+.simpletopbar a:hover {
+	color:#1f7dd8
+}
+.simpletopbar .left {
+	float:left
+}
+.simpletopbar .logo {
+	width:311px;
+	height:73px;
+	background:url(//s2.ymatou.com/login/a09cf0d320e4ffc6445ae0ec42cb02f0.png);
+	display:block;
+	float:left;
+	margin:12px 0 13px
+}
+.simpletopbar .right {
+	padding-top:40px;
+	float:right;
+	line-height:30px
+}
+.simpletopbar .item {
+	float:left;
+	padding:0 8px;
+	color:#999
+}
+.simpletopbar .top-dropdown {
+	padding:0
+}
+.top-dropdown {
+	position:relative;
+	padding:0;
+	z-index:110;
+	margin:1px 8px 0
+}
+.top-dropdown i,.top-dropdown span {
+	cursor:pointer
+}
+.top-dropdown .mobiletext {
+	color:#c33
+}
+.top-dropdown .droptitle {
+	border:1px solid #fff;
+	border-bottom:0;
+	display:block;
+	margin-top:-1px;
+	line-height:29px;
+	color:#999
+}
+.top-dropdown:hover {
+	margin:1px 0 0;
+	z-index:111
+}
+.top-dropdown:hover .droptitle {
+	display:block;
+	border:1px solid #666;
+	border-bottom:0;
+	background-color:#fff;
+	padding:0 8px;
+	z-index:112;
+	position:relative;
+	top:0
+}
+.top-dropdown:hover .dropdownlist {
+	display:block
+}
+.top-dropdown .icon-phone,.top-dropdown span {
+	display:inline-block;
+	vertical-align:top
+}
+.top-dropdown i {
+	display:inline-block
+}
+.top-dropdown .icon-close {
+	vertical-align:middle
+}
+.top-dropdown .arrow {
+	height:0;
+	font-size:0;
+	line-height:0;
+	overflow:hidden;
+	display:inline-block;
+	border-width:3px;
+	border-style:solid dashed dashed;
+	border-color:#666 transparent transparent;
+	margin:6px 3px 0
+}
+.dropdownlist {
+	border:1px solid #666;
+	position:absolute;
+	display:none;
+	background-color:#fff;
+	z-index:101;
+	top:28px;
+	line-height:18px;
+	overflow:hidden
+}
+.dropdownlist li {
+	border-bottom:1px dashed #ddd;
+	padding:5px 8px;
+	margin-bottom:-1px;
+	text-align:left
+}
+.dropdownlist a {
+	color:#666
+}
+.dropdownlist a:hover {
+	color:#1f7dd8
+}
+.dropdownlist a.fc-red-light {
+	color:#c33
+}
+#QuickLogin .dropdownlist {
+	width:94px
+}
+#QuickLogin .dropdownlist li {
+	width:78px
+}
+#StowBox .dropdownlist {
+	width:80px
+}
+#SellerServer .dropdownlist {
+	width:100px
+}
+#MyCollect .dropdownlist,#MyCollect li,#MyMatou .dropdownlist,#MyMatou li {
+	width:76px
+}
+img {
+	vertical-align:middle
+}
+.yel {
+	color:#f04d00
+}
+.fr {
+	float:right
+}
+.fl {
+	float:left
+}
+.reg_tabs {
+	height:70px;
+	border-bottom:2px solid #ddd;
+	position:relative
+}
+.reg_tabs .active a {
+	border-bottom-color:#f04e00;
+	color:#f04e00;
+	background:url(//s2.ymatou.com/login/5b664fb6bc602e04ae085eab8d2a52b9.jpg) no-repeat bottom
+}
+.sina_login i {
+	background-image:url(//s2.ymatou.com/login/d50e308ab6557dead5473e95d8901975.png);
+	background-repeat:no-repeat;
+	background-position:-86px -235px;
+	height:21px;
+	float:left
+}
+#buttonAlipayFastPayment i {
+	height:16px;
+	background:url(//s2.ymatou.com/login/d50e308ab6557dead5473e95d8901975.png) -62px -235px;
+	background-repeat:no-repeat
+}
+#buttonAlipayFastPayment i,#wxLogin i {
+	display:inline-block;
+	cursor:pointer;
+	vertical-align:middle
+}
+#wxLogin i {
+	height:20px;
+	background:url(//s2.ymatou.com/login/bfdb5897258b551e046ea2fbc433c70b.png);
+	background-repeat:no-repeat
+}
+.payment {
+	height:370px;
+	width:192px;
+	overflow:hidden;
+	padding:20px 30px 0;
+	background:url(//s2.ymatou.com/login/49694f08c5a1502bc7993f9367d5a441.png) no-repeat 0 0
+}
+#registerbtnPhone {
+	width:67px;
+	height:30px;
+	background:url(//s2.ymatou.com/login/d50e308ab6557dead5473e95d8901975.png) -27px -2px;
+	display:inline-block;
+	color:#fff;
+	text-align:center
+}
+.reg_tabs ul li {
+	float:left
+}
+.reg_tabs li a {
+	display:block;
+	float:left;
+	overflow:hidden;
+	height:70px;
+	line-height:70px;
+	text-decoration:none;
+	font-size:16px;
+	font-weight:700;
+	padding:0 40px;
+	border-bottom:2px solid #ddd
+}
+.reg_tabs li a i {
+	font-size:30px;
+	font-weight:400;
+	vertical-align:middle;
+	margin-right:5px
+}
+.reg_tabs .reg_tabs_right {
+	position:absolute;
+	right:0;
+	top:39px
+}
+.reg_tabs .reg_tabs_right a {
+	color:#3368ff
+}
+.form_info {
+	width:100%;
+	position:relative;
+	display:block
+}
+.form_info,.payment .hd {
+	padding:10px 0
+}
+.payment .bd {
+	border:1px solid #e2e2e2
+}
+.payment .dd {
+	padding:5px 10px;
+	height:24px;
+	line-height:24px;
+	border-bottom:1px dashed #e2e2e2;
+	margin-bottom:-1px
+}
+.payment .dd a i {
+	width:24px;
+	margin-right:5px
+}
+.form_info .left {
+	width:680px
+}
+.form_info .item {
+	float:none;
+	margin:15px 0;
+	padding:5px 0;
+	line-height:26px;
+	clear:both
+}
+.form_info .regtitle {
+	float:left;
+	text-align:right;
+	width:105px;
+	margin-right:8px
+}
+.form_info .regtext {
+	margin-right:3px;
+	width:200px;
+	height:22px;
+	border:1px solid #dadada;
+	line-height:22px;
+	box-shadow:inset 2px 2px 4px #f0f0f0;
+	border-top:1px solid #bababa;
+	padding:2px 5px
+}
+#ConfirmImage {
+	cursor:pointer
+}
+.form_info .wid90 {
+	width:90px
+}
+.verifi {
+	display:none;
+	height:26px;
+	background:#eb5e00;
+	line-height:26px;
+	padding:0 10px;
+	vertical-align:middle;
+	color:#fff
+}
+.greybg {
+	background:#f2f2f2;
+	color:#666
+}
+.btn {
+	display:inline-block;
+	text-align:center;
+	vertical-align:middle;
+	padding:0 10px;
+	cursor:pointer;
+	border-radius:3px;
+	height:30px;
+	line-height:30px;
+	background:#8fa0ab;
+	color:#fff;
+	border:0
+}
+.getCode:hover {
+	background:#7ca0ab;
+	text-decoration:none;
+	color:#fff
+}

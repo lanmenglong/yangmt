@@ -1,0 +1,100 @@
+[
+    {
+        "title": "护肤",
+        "text1": "面膜",
+        "text2": "水乳",
+        "text3": "防晒隔离",
+        "img": "http://pic1.ymatou.com/G02/M0B/0B/61/CgvUBFlE_l-AFtC7AAMyS71u0oU066_1_1_o.gif"
+    },
+    {
+        "title": "彩妆",
+        "text1": "口红",
+        "text2": "气垫",
+        "text3": "香水",
+        "img": "http://pc1.img.ymatou.com/G02/M0A/ED/A9/CgvUBVeZ2L6ABltOAABxkvbGDQk168_o.png"
+    },
+    {
+        "title": "品牌箱包",
+        "text1": "单肩包",
+        "text2": "双肩包",
+        "text3": "Coach",
+        "img": "http://pic1.ymatou.com/G02/M09/0D/78/CgvUBVlFEvOAQkcaAAGYJe4aulA194_143_150_o.gif"
+    },
+    {
+        "title": "鞋履",
+        "text1": "凉鞋",
+        "text2": "单鞋",
+        "text3": "Adidas",
+        "img": "http://pc1.img.ymatou.com/G02/M00/ED/64/CgvUBFeZ2YSACNR4AACJFnNWXac077_o.png"
+    },
+    {
+        "title": "女士穿搭",
+        "text1": "连衣裙",
+        "text2": "T恤",
+        "text3": "衬衫",
+        "img": "http://pic1.ymatou.com/G02/M08/EC/89/CgvUA1lk5NiANQAeAAD_7CZcg78365_461_486_o.gif"
+    },
+    {
+        "title": "男士护肤",
+        "text1": "发胶",
+        "text2": "剃须",
+        "text3": "止汗",
+        "img": "http://pic1.ymatou.com/G02/M05/6A/09/CgvUBVhSXpOAEDFIAACDzejl1ZE036_1_1_o.png"
+    },
+    {
+        "title": "内衣",
+        "text1": "文胸",
+        "text2": "CK",
+        "text3": "维密",
+        "img": "http://pic1.ymatou.com/G02/M01/EC/A0/CgvUA1lk5rWASAHsAAFaTZMu2iw899_461_486_o.gif"
+    },
+    {
+        "title": "品质男装",
+        "text1": "Polo",
+        "text2": "衬衫",
+        "text3": "豆豆鞋",
+        "img": "http://pic1.ymatou.com/G02/M02/F3/3C/CgvUBVlk4iiAEp0IAACiLbg3h8o349_461_486_o.gif"
+    },
+    {
+        "title": "运动",
+        "text1": "运动鞋",
+        "text2": "Puma",
+        "text3": "Nike",
+        "img": "http://pic1.ymatou.com/G02/M09/F2/32/CgvUBFlk4ziAYl1gAADso_Kix_M090_461_486_o.gif"
+    },
+    {
+        "title": "钟表配饰",
+        "text1": "项链",
+        "text2": "墨镜",
+        "text3": "潘多拉",
+        "img": "http://pc1.img.ymatou.com/G02/M07/F3/85/CgvUBVeavnWAab-JAACOcFScJj8696_o.png"
+    },
+    {
+        "title": "居家",
+        "text1": "滤水壶",
+        "text2": "乳胶枕",
+        "text3": "保温杯",
+        "img": "http://pic1.ymatou.com/G02/M05/06/B3/CgvUA1lFFDaARUpcAACzNBqBHFw705_188_181_o.gif"
+    },
+    {
+        "title": "食品保健",
+        "text1": "保健",
+        "text2": "葡萄酒",
+        "text3": "减肥排油",
+        "img": "http://pic1.ymatou.com/G02/M09/18/C5/CgvUA1lHiFiAYmDvAAFME201JUk327_1_1_o.gif"
+    },
+    {
+        "title": "母婴",
+        "text1": "纸尿裤",
+        "text2": "奶粉",
+        "text3": "安全座椅",
+        "img": "http://pic1.ymatou.com/G02/M01/0C/59/CgvUBFlFFSmAFztnAADDj1QetZA463_1_1_o.gif"
+    },
+    {
+        "title": "数码家电",
+        "text1": "洁面仪",
+        "text2": "电吹风",
+        "text3": "Beats",
+        "img": "http://pic1.ymatou.com/G02/M09/69/5F/CgvUBFhSZQSALSJnAABGFQdHEwQ540_1_1_o.png"
+    }
+]

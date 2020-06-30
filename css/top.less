@@ -1,0 +1,280 @@
+@charset "utf-8";/*申明编码集*/
+html,body,button,code,dd,div,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+a{text-decoration:none;color:#000}
+
+img{display:block;/*去掉img下方的间距*/border:none;}
+input{outline:none;/*去掉选中时的蓝色边框*/}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+    font-size:16px;
+}
+b,strong{font-weight:normal;}
+.qc:after{
+    content:".";     
+    display:block;
+    width:0;
+    height:0;
+    clear:both;
+    overflow:hidden;
+    visibility:hidden;
+            }
+        .fl{float:left;}
+        .fr{float:right;}
+    
+.top{
+    
+    
+    
+
+    .topList{
+        height: 30px;
+        background-color: #CCC;
+        font-size: 12px;
+        line-height: 30px;
+        a:hover{color: red;}
+        li{
+            float: left;
+            margin-left: 20px;
+        }
+        span{
+            padding-left: 20px;
+        }
+    }
+    .rightbar{
+        width: 35px;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: #383838;
+        color: #fff;
+        z-index: 11;
+        .rightbar-inner{
+            text-align: center;
+            padding: 270px 0 0;
+            
+            .itemGou{
+                
+                position: relative;
+                border-top: 1px solid #979797;
+                
+                a{
+                    padding: 20px 0;
+                    display: block;
+                    color: #fff;
+                    text-decoration:none;
+                    
+                }
+                #qrcodeContainer{
+                    position: absolute;
+                    top: 0px;
+                    left: -102px;
+                    z-index: 1;
+                    width: 102px;
+                    height: 126px;
+                    background: rgb(56, 56, 56);
+                    display: none;    
+                }
+            }
+        }
+    }
+    .topMiddle{
+        margin-top: 16px;
+        .topLogo{
+            margin-top: 10px;
+            width: 310px;
+            height: 70px;
+            float: left;
+            
+            a {
+            text-decoration: none;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+            img{
+                float: left;
+            }
+            span{
+                float: right;
+                font-size: 21px;
+                display: block;
+                padding-top: 25px;
+            }    
+
+        }
+        /*头部图片logo*/
+        .logoInp{
+            margin: 20px 0px 0px 50px;
+            input{
+                font-size: 18px;
+                width: 300px;
+                height: 40px;
+            }
+            button{
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                background-color:#c33;
+            }
+        }
+    }
+    /*头部分类*/
+    .menu-nav{
+        text-align: center;
+        position: relative;
+        height: 46px;
+    bottom: -2px;
+    z-index: 10;
+    border-bottom: 2px solid #c33;
+
+        .menu-item{
+            padding: 0 35px;
+    
+            height: 45px;
+            line-height: 45px;
+            border-right: 1px solid #fff;
+            border-left: 1px solid #fff;
+            border-top: 1px solid #fff;
+            
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration:none;
+            
+        }
+        // a:last-child{
+        //     margin-left: ;
+        // }
+        a:hover{
+            color: #c33;
+        }
+        .jianTou{
+            
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            
+            width: 14px;
+            display: inline-block;
+            margin-left: 10px;
+            transition: all 0.1s;
+            transform-origin: 10px 10px;
+    
+        }
+        .classifyOK{
+            display: inline-block;
+    
+            // font-size: 20px;
+            color: #383838;
+            padding: 0 35px;
+            font-weight: 700;
+            height: 45px;
+            line-height: 45px;
+            border-right: 1px solid #fff;
+            border-left: 1px solid #fff;
+            border-top: 1px solid #fff;
+        }
+        .classifyNO{
+            height: 46px;
+            border-right: 1px solid #c33;
+            border-left: 1px solid #c33;
+            border-bottom: 3px solid #fff;
+            border-top: 1px solid #c33;
+            color: #c33;
+            box-shadow: 0 -1px 8px 0 #cecece;
+            position: relative;
+            z-index: 111;
+            
+                
+            
+            // .jianTou{
+            //     transform: rotate(180deg);
+
+            // }
+            
+        }
+        
+        .category-box{
+            width: 100%;
+                position: absolute;
+                left: 0;
+                top: 46px;
+                overflow: hidden;
+                background-color: #fff;
+                box-shadow: 0 2px 8px #9b9b9b;
+            
+            .category-downlist{
+                width: 100%;
+                position: relative;
+                display: none;
+                
+                .category-wrap{
+
+                    overflow: hidden;
+                    margin: 10px 5px;
+                .cw-item{
+                    width: 198px;
+                    height: 56px;
+                    float: left;
+                    border: 1px solid #ccc;
+                    position: relative;
+                    padding: 9px 20px;
+                    text-align: left;
+                    border-left: 0;
+                    border-top: 0;
+                    .cw-img{
+                        width: 55px;
+                        height: 55px;
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                        img{
+                            width: 55px;
+                            height: 55px;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #666;
+                        .cw-title{
+                            font-size: 18px;
+                            font-weight: bold;
+                            margin-bottom: 5px;
+                        }
+                    }
+                    span:hover{
+                        color: #c33;
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+
+.area{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
+    a{
+        color: #999;
+    }
+    .bottom_list{
+        width: 880px;
+        margin: 10px auto 15px;
+        text-align: left;
+        overflow: hidden;
+        .dl{
+            float: left;
+            width: 190px;
+            font-size: 12px;
+            
+        }
+        li{
+            padding: 3px 0;
+        }
+    }
+}
