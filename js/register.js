@@ -122,7 +122,30 @@ $(() => {
                 return
             }
         }
-        console.log('bbb')
+        let data = {
+            username: $.trim($('#LoginId').val()),
+            password: md5($.trim($('#password').val())).slice(0, 15),
+            phone: $.trim($('#mobile').val())
+        }
+        console.log($.trim($('#mobile').val()))
+
+        $.ajax({
+            type: 'POST',
+            url: '../server/register.php',
+            data,
+            dataType: 'json',
+
+            success(response) {
+                if (response.status == 'success') {
+                    alert(response.msg)
+                    window.location.href = '../html/login.html'
+                } else {
+                    alert(response.msg)
+                }
+            }
+        })
+
+
     })
 
 

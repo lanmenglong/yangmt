@@ -1,0 +1,42 @@
+.autocomplete-suggestions {
+	border:1px solid #999;
+	background:#fff;
+	overflow:auto;
+	font-size:14px
+}
+.autocomplete-suggestion {
+	padding:2px 5px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-align:left;
+	cursor:pointer
+}
+.autocomplete-selected {
+	background:#f0f0f0
+}
+.autocomplete-suggestions strong {
+	font-weight:400;
+	color:#39f
+}
+.autocomplete-group {
+	padding:2px 5px
+}
+.autocomplete-group strong {
+	display:block;
+	border-bottom:1px solid #000
+}
+.errorPage {
+	background:url(//s2.ymatou.com/home/6819a2107b8d2c13a80b586e2214fa9e.png) no-repeat;
+	width:427px;
+	height:137px;
+	margin:80px auto;
+	cursor:pointer;
+	background-size:cover
+}
+.lineClamp1,.lineClamp2 {
+	text-overflow:ellipsis;
+	-webkit-line-clamp:2;
+	display:-webkit-box;
+	overflow:hidden;
+	white-space:normal
+}
