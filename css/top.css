@@ -271,6 +271,33 @@ strong {
 .top .menu-nav .category-box .category-downlist .category-wrap .cw-item span:hover {
   color: #c33;
 }
+.footer {
+  margin-top: 70px;
+  background-color: pink;
+}
+.footer .matou-server {
+  background-color: #c33;
+}
+.footer .matou-server .haiWai {
+  height: 60px;
+  cursor: pointer;
+  text-align: center;
+}
+.footer .matou-server .haiWai .hai-item {
+  color: #fff;
+  margin: 0 40px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.footer .matou-server .haiWai .chaKan {
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 25px;
+  border-radius: 30px;
+  color: #fff;
+  line-height: 25px;
+}
 .area {
   margin-right: auto;
   margin-left: auto;

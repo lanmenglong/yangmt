@@ -1,9 +1,6 @@
 $(() => {
 
-    $('#LoginId').val('oklogo')
-    $('#password').val('666666')
-    $('#ConfirmPwd').val('666666')
-    $('#mobile').val('15078558357')
+
 
 
     // 验证码

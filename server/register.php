@@ -27,7 +27,7 @@ if(mysqli_num_rows($result) == 0)
 {
   # 该用户不存在可以直接注册
   # 具体：向数据库中写入一行数据
-  $sql = "INSERT INTO `user` (`id`, `username`, `password`, `phone`) VALUES (NULL, '$username', '$password', '$phone')";
+  $sql = "INSERT INTO `user` (`user_id`, `username`, `password`, `phone`) VALUES (NULL, '$username', '$password', '$phone')";
   $result = mysqli_query($db, $sql);
   
   $arr = array("status"=>"success","msg"=> "恭喜你，注册成功！");

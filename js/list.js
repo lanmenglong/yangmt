@@ -41,7 +41,7 @@ $(() => {
         }).done(data => {
             let liHTML = data.map((item, i) => {
                 return `<li class="product-item " data-id=${item.good_id}>
-                <a href="/product/p5203995.html" target="_blank" class="product-img"
+                <a href="../html/xiangqi.html" target="_blank" class="product-img"
                     title="lv 棋盘格手包 96新 公价8500">
                     <img class="lazy" src="${item.img}">
                         

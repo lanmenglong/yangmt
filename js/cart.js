@@ -188,15 +188,21 @@ $(() => {
         let ele = $('.item').filter(function () {
             return $(this).hasClass('item-checked') == true
         })
+        let total = 0
         let totalPrice = 0
         ele.each(function (index, item) {
             // console.log($(item).children('.check-product-info').find('.sum').text())
+            // total += $(item).children('.check-product-info').find('.current-price').text() * $(item).children('.check-product-info').find('.reduce').next().val()
 
             totalPrice += $(item).children('.check-product-info').find('.sum').text() * 1
+
         })
+        // $('.sum').val(total)
         $('.account-wrap .total').text(totalPrice.toFixed(2))
     }
+    // function price() {
 
+    // }
 
     // 加减按钮
     $('#prodListContainer').on('click', '.reduce', function () {
@@ -205,13 +211,14 @@ $(() => {
             val = 1
         }
         $(this).next().val(val)
+        priceAll()
 
     })
     $('#prodListContainer').on('click', '.add', function () {
         let val = $(this).prev().val() * 1 + 1
-        console.log(val)
+        // console.log(val)
         $(this).prev().val(val)
-
+        priceAll()
     })
 
 })

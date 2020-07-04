@@ -20,7 +20,7 @@ class Caini {
         </a>
         <p class="price">
             <span class="unit">${item.price}</span>
-            <button class="gouBtn">加入购物车</button>
+            
         </p>
     </li>`
         }).join('')
@@ -60,10 +60,18 @@ $(() => {
 setInterval(() => {
     let date = new Date()
     let starDate = date.getTime()
-    let endDate = new Date(2020, 6, 1, 0, 0, 0)
+    let endDate = new Date(2020, 6, 6, 0, 0, 0)
     let thenDate = endDate.getTime()
     let time = (thenDate - starDate) / 1000
-    $('.hours').text(parseInt(time / 3600))
-    $('.minutes').text(parseInt((time % 3600) / 60))
-    $('.second').text(parseInt(time % 3600 % 60))
+    let hours = parseInt(time / 3600)
+    let minutes = parseInt((time % 3600) / 60)
+    let second = parseInt(time % 3600 % 60)
+    $('.hours').text(`${hours < 10 ? '0' + hours : hours}`)
+    $('.minutes').text(`${minutes < 10 ? '0' + minutes : minutes}`)
+    $('.second').text(`${second < 10 ? '0' + second : second}`)
 }, 1000)
+
+// 最大轮播图
+
+
+

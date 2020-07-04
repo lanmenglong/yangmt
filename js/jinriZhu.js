@@ -51,17 +51,32 @@ $(() => {
                             </div>
                             <div class="timeout-wrap">
                                 <span class="title">距离结束</span>
-                                <span class="time t-hh">10</span>
+                                <span class="time t-hh"></span>
                                 <span class="txt"></span>
-                                <span class="time t-mm">10</span>
+                                <span class="time t-mm"></span>
                                 <span class="txt"></span>
-                                <span class="time t-ss">11</span>
+                                <span class="time t-ss"></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>`
             })
+
+            setInterval(() => {
+                let date = new Date()
+                let starDate = date.getTime()
+                let endDate = new Date(2020, 6, 6, 0, 0, 0)
+                let thenDate = endDate.getTime()
+                let time = (thenDate - starDate) / 1000
+                let hours = parseInt(time / 3600)
+                let minutes = parseInt((time % 3600) / 60)
+                let second = parseInt(time % 3600 % 60)
+                $('.t-hh').text(`${hours < 10 ? '0' + hours : hours}`)
+                $('.t-mm').text(`${minutes < 10 ? '0' + minutes : minutes}`)
+                $('.t-ss').text(`${second < 10 ? '0' + second : second}`)
+            }, 1000)
+
             let box = $('<div>')
             box.addClass('todaybuy-content active').html(html)
             $('#J_todaybuyBody').append(box)

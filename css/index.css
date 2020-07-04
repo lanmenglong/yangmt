@@ -1,11 +1,9 @@
 .contentBox {
   width: 100%;
-  background-color: red;
+  background-color: #F13454;
 }
 .contentBox .contentImg {
-  font-size: 50px;
   position: relative;
-  background-color: yellow;
 }
 .contentBox .innerBox {
   background-color: #ccc;

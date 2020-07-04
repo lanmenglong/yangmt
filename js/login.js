@@ -18,8 +18,7 @@ $(() => {
     captcha.draw(document.querySelector('#captcha'), r => {
         imgCodeTarge = r
     })
-    $('#LoginName').val('oklogo')
-    $('#PassWord').val(666666)
+
     $('#loginBtn').click(() => {
 
         let nameVal = $.trim($('#LoginName').val())
