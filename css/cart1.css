@@ -1101,8 +1101,14 @@ a:hover {
 .product-list-wrap .product-bd .pi-img {
 	float:left;
 	position:relative;
-	border:1px solid #cecece
+	border:1px solid #cecece;
+	
 }
+.product-list-wrap .product-bd .pi-img img{
+	width: 50px;
+	height: 50px;
+}
+
 .product-list-wrap .product-bd .pi-img .product-icon {
 	position:absolute;
 	left:5px;
